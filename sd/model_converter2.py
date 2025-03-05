@@ -5,7 +5,7 @@ from safetensors.torch import load_file
 def load_from_standard_weights(input_file: str, device: str) -> dict[str, torch.Tensor]:
 
     fined_tuned_model = load_file(input_file)
-    original_model = load_file("C:/Users/babym/Documents/Coding/Stable_Diffusion_scratch_AI_project/data/v1-5-pruned.safetensors")
+    original_model = load_file("../data/v1-5-pruned.safetensors")
 
     converted = {}
     converted['diffusion'] = {}
