@@ -32,7 +32,6 @@ def generate_image_endpoint():
     if not prompt:
         return jsonify({'error': 'Prompt is required'}), 400
 
-    # Replace this with your actual image generation logic
     # main_model = session.get("main_model")
     # naruto_model = session.get("naruto_model")
     # print(session.get("main_model"))
@@ -60,7 +59,6 @@ def send_text():
 
     image = request.files['image']
 
-    # Replace this with your actual image to text logic
     text = image_to_text(image)
     # text = "A cat sitting on a table"
 
