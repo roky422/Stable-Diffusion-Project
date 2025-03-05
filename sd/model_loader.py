@@ -12,12 +12,12 @@ def preload_models_from_standard_weights(weights_path, device):
     print(weights_path)
     if "FN" in weights_path:
         if weights_path == "FN Naruto - 1 epoch":
-            model_path = "C:/Users/babym/Documents/Coding/Stable_Diffusion_scratch_AI_project/data/diffusion_pytorch_model_FineTune(1epoch).safetensors"
+            model_path = "../data/diffusion_pytorch_model_FineTune(1epoch).safetensors"
         elif weights_path == "FN Naruto - 20 epoch":
-            model_path = "C:/Users/babym/Documents/Coding/Stable_Diffusion_scratch_AI_project/data/diffusion_pytorch_model_FineTune(20epoch).safetensors"
+            model_path = "../data/diffusion_pytorch_model_FineTune(20epoch).safetensors"
         state_dict = model_converter2.load_from_standard_weights(model_path, device)
     else:
-        model_path = "C:/Users/babym/Documents/Coding/Stable_Diffusion_scratch_AI_project/data/v1-5-pruned.safetensors"
+        model_path = "../data/v1-5-pruned.safetensors"
         state_dict = model_converter1.load_from_standard_weights(model_path, device)
 
     encoder = VAE_Encoder().to(device)
