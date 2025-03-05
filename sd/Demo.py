@@ -21,7 +21,7 @@ def generate_image(prompt, weights_path):
         DEVICE = "mps"
     print(f"Using device: {DEVICE}")
 
-    tokenizer = CLIPTokenizer("C:/Users/babym/Documents/Coding/Stable_Diffusion_scratch_AI_project/data/tokenizer_vocab.json", merges_file="C:/Users/babym/Documents/Coding/Stable_Diffusion_scratch_AI_project/data/tokenizer_merges.txt")
+    tokenizer = CLIPTokenizer("../data/tokenizer_vocab.json", merges_file="../data/tokenizer_merges.txt")
     models = model_loader.preload_models_from_standard_weights(weights_path, DEVICE)
 
     ## TEXT TO IMAGE
@@ -91,5 +91,5 @@ def image_to_image(image):
 
 # if __name__ == "__main__":
 #     # def image_to_image(image):
-#     caption = image_to_text("C:/Users/babym/Documents/Coding/Stable_Diffusion_scratch_AI_project/images/wierd_me.jpg")
+#     caption = image_to_text("../images/wierd_me.jpg")
 #     print("Generated Caption:", caption)
