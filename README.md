@@ -7,3 +7,7 @@
 3. Download `diffusion_pytorch_model_FineTune(1epoch).safetensors` from https://huggingface.co/roky42/Stable-Diffusion-Naruto-FN/tree/main and save it in the `data` folder
 4. Download `diffusion_pytorch_model_FineTune(20epoch).safetensors` from https://huggingface.co/roky42/Stable-Diffusion-Naruto-FN/tree/main and save it in the `data` folder
 5. Download `diffusion_pytorch_model_FineTune(50epoch).safetensors` from https://huggingface.co/roky42/Stable-Diffusion-Naruto-FN/tree/main and save it in the `data` folder
+
+## Requirements
+
+PyTorch 2.5.1 (stable) + CUDA 12.4.1 
